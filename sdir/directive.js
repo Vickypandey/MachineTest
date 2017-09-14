@@ -1,10 +1,11 @@
 'use strict';
 angular.module('myApp.directive', ['ngRoute'])
-.directive('myDirctive' , function() {
-	 return {
-        restrict: "E",
-        scope: false,
-        template: "<div>Movie title : {{movie}}</div>"+
-        "Type a new movie title : <input type='text' ng-model='movie' />"
-    };
-})
+    .directive('myDirctive', function() {
+
+        return {
+            restrict: "EA",
+            scope: false,
+            template: "<div>Your name is : {{name}}</div>" +
+                "Change your name : <input type='text' ng-model='name' />"
+        };
+    })
